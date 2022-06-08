@@ -3,11 +3,11 @@
         <!-- POST -->
         {% for post in site.posts %}
         <div class="post-date">{{ post.date | date: "%B %d, %Y" }}</div>
-        <h2><a href="{{ site.baseurl }}{% post_url %}">{{ post.title }}</a></h2>
+        <h2><a href="{{ site.baseurl }}{{ post_url }}">{{ post.title }}</a></h2>
 
         {{ post.excerpt }}
         <br>
-        <a class="button" href="{{ site.baseurl }}{% post_url %}">Read More</a>
+        <a class="button" href="{{ site.baseurl }}{{ post_url }}">Read More</a>
         {% endfor %}
     </div>
 </section>
