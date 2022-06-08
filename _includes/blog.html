@@ -3,7 +3,7 @@
         <!-- POST -->
         {% for post in site.posts %}
         <div class="post-date">
-            <p>{{ post.date | date: "%B %d, %Y" }}</p>
+            {{ post.date | date: "%B %d, %Y" }}
         </div>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
 
