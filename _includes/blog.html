@@ -2,7 +2,6 @@
     <div class="container">
         <!-- POST -->
         {% for post in site.posts %}
-
         <div class="post-date">{{ post.date | date: "%B %d, %Y" }}</div>
         <h2><a href="{% post_url %}">{{ post.title }}</a></h2>
 
