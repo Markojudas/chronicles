@@ -4,7 +4,7 @@ title:  "My Third Post"
 date:   2022-06-06 17:06
 author: Markojudas
 lead: "My Third Post"
-category: blog
+category: chronicles
 ---
 
 This is my third post!
