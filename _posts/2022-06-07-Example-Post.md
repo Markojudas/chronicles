@@ -4,7 +4,7 @@ title:  "Example Post"
 date:   2022-06-07 21:28
 author: Markojudas
 lead: "Example Post"
-category: chronicles/_posts
+category: blog
 ---
 
 This is an example post!
