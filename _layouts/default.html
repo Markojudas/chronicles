@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 4.0 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- JQuery first, then Popper.js, then Bootstap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Chronicles of Markojudas</title>
+</head>
+
+<style>
+    body {
+        height: 100vh;
+        background: scroll;
+        background: rgb(5, 15, 15);
+
+    }
+
+    .container {
+        text-align: left;
+        padding-left: 180px;
+        padding-right: 200px;
+        font-size: medium;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: whitesmoke;
+    }
+
+    a {
+        color: beige;
+        text-decoration: none;
+    }
+
+    a:link,
+    a:visited,
+    a:active,
+    a:hover {
+        color: beige;
+        border-bottom-style: none;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .post-date {
+        margin-top: 2em;
+        color: #888;
+    }
+
+    .button {
+        background-color: slategrey;
+        color: white;
+        border-radius: 8px;
+        margin: 4px 2px;
+        padding: 10px
+    }
+
+    h2 {
+        color: beige;
+        font-size: xx-large;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>CHRONICLES OF MARKOJUDAS</h1>
+    </div>
+    <hr>
+    <br>
+    {{ content }}
+</body>
+
+</html>
