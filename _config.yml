@@ -35,6 +35,15 @@ plugins:
 permalink: none
 markdown: kramdown
 
+defaults:
+- scope:
+    path: ""
+    type: "posts"
+  values:
+    layout: "post"
+    category: "blog"
+    author: "Markojudas"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
