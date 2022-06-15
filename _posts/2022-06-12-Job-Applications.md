@@ -3,7 +3,7 @@ title: Job Hunting!
 date: 2022-06-12 21:30
 ---
 
-<!-- markdownlint-disbale -->
+<!-- markdownlint-disable -->
 
 I have applied and sent my resume to several places the last couple of days but the 2 places I am most excited about are <a href="https://github.com">GitHub</a> and <a href="https://ukg.com">Ultimate Kronos Group (UKG)</a> both for a software engineer position. These two companies are leaders in the industry. I have heard amazing things of UKG's culture and every one knows GitHub as the leader of Open Source and collaborations!. Right now, though I know I am writing into the Void, I need all the good ju-ju I can get.
 
