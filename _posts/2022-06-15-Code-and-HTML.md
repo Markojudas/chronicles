@@ -21,8 +21,8 @@ type person struct{
 
 func (p person) speak(){
 
-fmt.Println(`I am the dragon reborn 
-		and in madness I shall soon prevail`)
+	fmt.Println(`I am the dragon reborn 
+			and in madness I shall soon prevail`)
 }
 
 type superHuman struct{
