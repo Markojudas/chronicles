@@ -9,7 +9,7 @@ My previous post I tried to give an example of the interface concepts in the Go 
 
 <pre>
 <code>
-	
+```go	
 type human interface{
 	speak()
 }
@@ -44,7 +44,7 @@ func (h human) saySomething(){
 	h.speak()
 
 }		
-
+```
 </code>
 </pre> 
 
