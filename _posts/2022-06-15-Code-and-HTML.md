@@ -22,7 +22,7 @@ type person struct{
 func (p person) speak(){
 
 fmt.Println(`I am the dragon reborn 
-and in madness I shall soon prevail`)
+		and in madness I shall soon prevail`)
 
 }
 
