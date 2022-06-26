@@ -1,9 +1,8 @@
-<!-- markdownlint-disable -->
 ---
 title: Go: leetcode & AWS
 date: 2022-06-26 11:01
 ---
-
+<!-- markdownlint-disable -->
 A lot (and not so much) has happened since my last post. I have been struggling with the so-called imposter syndrome. Since my interviews with UKG I have been auto rejected from most of the companies I have applied to while from the Others I have not received any response whatsover (which at this point they feel as an answer on tiself). However, I remain focused and excited. I have been told that this is a game of numbers and a test of my will. 
 
 Despite of all it, I continue my journey learning Web Dev with Go while testing my Go knowledge by applying waht I am learning with LeetCode problems. The problems I have been working on the last 10 days have been problems I have solved before with Java (which is the language that I am more comfortabel with though I have NOT practiced in a bit) so I am just transcribing the code into Go. This process is forcing me to go through the Go documentation and language specification (which IS a different skill on itself). I am also practicing the formatting of **markdown** files with **HTML** code. Soon I will run into new problems and that will be quite interesting to solve it from scratch using Go.
