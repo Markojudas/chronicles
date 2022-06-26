@@ -1,7 +1,8 @@
 ---
-title: Go: leetcode & AWS
+title: Go leetcode & AWS
 date: 2022-06-26 11:01
 ---
+
 <!-- markdownlint-disable -->
 A lot (and not so much) has happened since my last post. I have been struggling with the so-called imposter syndrome. Since my interviews with UKG I have been auto rejected from most of the companies I have applied to while from the Others I have not received any response whatsover (which at this point they feel as an answer on tiself). However, I remain focused and excited. I have been told that this is a game of numbers and a test of my will. 
 
