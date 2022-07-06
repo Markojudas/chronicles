@@ -21,24 +21,44 @@ gpgkey=https://www.mongodb.org/static/pgp/server-5.0.asc</code></li>
 <li><code>sudo dnf install -y mongodb-org</code></li>
 </ol></pre>
 
-<pre><h2>Permissions</h2></pre>
-<pre><code>sudo chown -R mongod:mongod /var/lib/mongo/
-sudo chown mongod:mongod /tmp/mongod-27017.sock</code></pre>
+<pre><h2>Permissions (part 1)</h2></pre>
+<pre><code>sudo chown -R mongod:mongod /var/lib/mongo/</pre>
 
-<pre><h2>Modify the mongo.conf file</h2></pre>
-
-<pre><code>sudo vim /etc/mongod.conf</code></pre>
-
-<pre>Add the following:</pre>
-
-<pre><code>Security:
-    authorization: enabled</code></pre>
-
-<pre><h2>Start, check, and enable the service</h2></pre>
+<pre><h2>Start Mongod.service</h2></pre>
 
 <pre><code>sudo systemctl start mongod</code>
 <code>sudo systemctl status mongod</code>
 <code>sudo systemctl enable mongod</code></pre>
+
+<pre><h2>Permissions (part 2)</h2></pre>
+<pre><code>sudo chown mongod:mongod /tmp/mongodb-27017.sock</pre>
+
+<pre><h2>Connect and Create User</h2></pre>
+<pre><code>mongosh --port 27017 --dbpath /var/lib/mongo/</code></pre>
+<pre><code>> use admin
+db.createUser(
+    {
+        user: "MYUSER",
+        pwd: passwordPrompt(),
+        roles: [
+            { role: "userAdminAnyDatabase", db: "admin" },
+            { role: "readWriteAnyDatabase", db: "admin" }
+        ]
+    }
+)
+> db.adminCommand( { shutdown: 1 } )
+> exit</code></pre>
+
+<pre><h2>Modify the mongod.conf file</h2></pre>
+<pre><code>sudo vim /etc/mongod.conf</code></pre>
+
+Add the following:
+
+<pre><code>Security:
+    authorization: enabled</code></pre>
+
+<pre><h2>Restart MongoDB</h2></pre>
+<pre><code>sudo systemctl restart mongod</code></pre>
 
 This should do the trick!
 
