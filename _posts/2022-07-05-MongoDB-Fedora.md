@@ -20,7 +20,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-5.0.asc</code></li>
     <code>dnf copr enable dioni21/compat-openssl10</code></li>
 <li><code>sudo dnf install -y mongodb-org</code></li>
 </ol>
-<h2>Permissions</h2></p>
+<h2>Permissions</h2>
 <code>sudo chown -R mongod:mongod /var/lib/mongo/
 sudo chown mongod:mongod /tmp/mongod-27017.sock</code>
 
