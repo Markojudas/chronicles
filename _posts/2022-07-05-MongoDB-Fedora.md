@@ -7,9 +7,9 @@ date: 2022-07-05 21:32
 
 Today I started the mongodb module for my Go Web Dev. Yes, I am still working through this course. Time is limited between this course, leetcoding, job-hunting, and actual work and regular living. Installing mongodb on fedora 36 proved to be a pain in ass, to say the least. I had to do the following:
 
-<h2 id="post">Install MongoDB</h2>
-<ol>
-    <li id="post">Create a <code>/etc/yum.repos.d/mongodb-org-5.0.repo</code> file to install directly using yum/dnf<br>
+<p><h2>Install MongoDB</h2><p>
+<p><ol>
+    <li>Create a <code>/etc/yum.repos.d/mongodb-org-5.0.repo</code> file to install directly using yum/dnf<br>
     <pre><code>[mongodb-org-5.0]
 name=MongoDB Repository
 baseurl=https://repo.mongodb.org/yum/amazon/2/mongodb-org/5.0/x86_64/
@@ -21,21 +21,21 @@ gpgkey=https://www.mongodb.org/static/pgp/server-5.0.asc</code></pre></li>
     <code>dnf copr enable dioni21/compat-openssl10</code></li>
     <br>
     <li><code>sudo dnf install -y mongodb-org</code></li>
-</ol>
+</ol></p>
 <br>
 
-<h2>Permissions</h2>
+<p><h2>Permissions</h2></p>
 <pre><code>sudo chown -R mongod:mongod /var/lib/mongo/
 sudo chown mongod:mongod /tmp/mongod-27017.sock</code></pre>
 <br>
 
-<h2>Modify the mongo.conf file</h2>
-<code>sudo vim /etc/mongod.conf</code>
+<p><h2>Modify the mongo.conf file</h2></p>
+<code>sudo vim /etc/mongod.conf</code></p>
 Add the following:
 <pre><code>Security:
     authorization: enabled</code></pre>
 
-<h2>Start, check, and enable the service</h2>
+<p><h2>Start, check, and enable the service</h2></p>
 <code>sudo systemctl start mongod<br></code>
 <code>sudo systemctl status mongod<br></code>
 <code>sudo systemctl enable mongod<br></code>
