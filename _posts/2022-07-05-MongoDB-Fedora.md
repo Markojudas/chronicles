@@ -31,7 +31,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-5.0.asc</code></li>
 <code>sudo systemctl enable mongod</code></pre>
 
 <pre><h2>Permissions (part 2)</h2></pre>
-<pre><code>sudo chown mongod:mongod /tmp/mongodb-27017.sock</pre>
+<pre><code>sudo chown mongod:mongod /tmp/mongodb-27017.sock</code></pre>
 
 <pre><h2>Connect and Create User</h2></pre>
 <pre><code>mongosh --port 27017 --dbpath /var/lib/mongo/</code></pre>
