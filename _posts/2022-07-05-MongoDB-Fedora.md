@@ -22,7 +22,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-5.0.asc</code></li>
 </ol></pre>
 
 <pre><h2>Permissions (part 1)</h2></pre>
-<pre><code>sudo chown -R mongod:mongod /var/lib/mongo/</pre>
+<pre><code>sudo chown -R mongod:mongod /var/lib/mongo/</code></pre>
 
 <pre><h2>Start Mongod.service</h2></pre>
 
