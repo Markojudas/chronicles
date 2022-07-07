@@ -48,7 +48,7 @@ db.createUser(
 > db.adminCommand( { shutdown: 1 } )
 > exit</code></pre>
 
-<pre><h2>Modify the mongod.conf file</h2></pre>
+<pre><h2>Modify the mongod.conf file (Optional)</h2></pre>
 <pre><code>sudo vim /etc/mongod.conf</code></pre>
 
 Add the following:
