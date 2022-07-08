@@ -33,7 +33,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-5.0.asc</code></li>
 <pre><code>sudo chown mongod:mongod /tmp/mongodb-27017.sock</code></pre>
 
 <pre><h2>Connect and Create User</h2></pre>
-<pre><code>mongosh --port 27017 --dbpath /var/lib/mongo/</code></pre>
+<pre><code>mongosh --port 27017</code></pre>
 <pre><code>> use admin
 db.createUser(
     {
@@ -47,8 +47,8 @@ db.createUser(
 )
 > db.adminCommand( { shutdown: 1 } )
 > exit</code></pre>
-
-<pre><h2>Modify the mongod.conf file (Optional)</h2></pre>
+<pre><h1>(optional)</h1></pre>
+<pre><h2>Modify the mongod.conf file</h2></pre>
 <pre><code>sudo vim /etc/mongod.conf</code></pre>
 
 Add the following:
