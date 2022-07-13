@@ -9,4 +9,17 @@ Middle of the week. I have finally heard back from couple of places I have appli
 
 Additionally, I have done several leetcode problems, currently on day 12/15. The last few problems, labeled as "easy" and "medium" were quite challenging in the fact that even the solution provided by leetcode is a bit confusing. I am not familiar with Dynamic Programming and I REALLY need to get better at some algorithms and patterns (i.e., Sliding Window, DFS/BFS, etc...). Even though I feel pretty confident with GO, I struggled creating a 2D slice/array provided the row and column values from the arguments passed to the function.
 
+Not sure if this is the right way to do it; the documentation found shows a different way without the calls to `make` within the loop.
+
+<pre><code>func create2DSlice(r, c int) [][]int {
+
+	newMDS := make([][]int, r)
+
+	for idx := range newMDS {
+		newMDS[idx] = make([]int, c)
+	}
+
+	return newMDS
+}</code></pre>
+
 TLDR: I have the blues.
