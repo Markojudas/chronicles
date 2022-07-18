@@ -33,7 +33,6 @@ github_username:  Markojudas
 plugins:
   - jekyll-feed
   - jekyll-paginate
-permalink: none
 markdown: kramdown
 
 defaults:
