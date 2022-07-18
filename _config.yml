@@ -46,7 +46,6 @@ defaults:
     author: "Markojudas"
 
 paginate: 5
-paginate_path: /chronicles/page:num/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
