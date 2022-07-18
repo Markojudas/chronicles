@@ -1,0 +1,18 @@
+<section id="blog">
+    <div class="container">
+        <!-- POST -->
+        {% for post in site.posts %}
+        <div class="post-date">
+            {{ post.date | date: "%B %d, %Y" }}
+        </div>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <br>
+        <a class="button" href="{{ post.url | relative_url }}">Read</a>
+        <br>
+        <br>
+        {% endfor %}
+        <hr>
+        <br>
+        <a class="button" href="https://markojudas.com">Back to Site</a>
+    </div>
+</section>
