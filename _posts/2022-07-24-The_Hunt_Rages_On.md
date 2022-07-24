@@ -46,4 +46,3 @@ The problem was solved but my solution was, well, embarrassing. I just used one 
         
         return resultList;
 }</code></pre>
-<script src="../prism.js"></script>
