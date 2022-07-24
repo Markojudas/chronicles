@@ -17,10 +17,10 @@ For the CodePath program I had to take a <a href="https://www.hackerrank.com">Ha
 
 The problem was solved but my solution was, well, embarrassing. I just used one pointer variable to traverse through BOTH sorted list and added to the new List an element of List1 then from List2 or vice versa depending of the condition (in ascending order). I then flushed both Lists added any remaining elements to the new List. I then called the `Arrays.sort()` sort function. This was ALL unnecessary! As soon as I submitted the assessment I thought of the TWO POINTER SOLUTION. Basically the same, but I would have 1 pointer `i` traversing `List1` and another pointer `j` traversing `List2`. In a `while` loop (as long as `i < List1.size() && j < List2.size()`) I tested the condition: `List1.get(i) <= List2.get(j)`. If so, then I'd add the element at `List1.get(i)` to the new list and move the `i` pointer forward. Otherwise, I'd add the element at `List2.get(j)` to the new list and move the `j` pointer forward. Once I break from `while` loop (once `i >= List1.size() OR j >= List2.size()`) then I'd flush both lists (if there are elements on either lists then just add them to new list). Then I'd return the new list. That's IT.
 
-<code class="sum">
-    static List&ltInteger&gt mergeList(List&ltInteger&gt nums1, List&ltInteger&gt nums2){
+<code class="language-java">
+    <code class="plain">static List<Integer> mergeList(List<Integer> nums1, List<Integer> nums2){</code>
         int i = 0, j = 0;
-        List&ltInteger&gt resultList = new List&lt&gt();
+        <code class="plain">List<Integer> resultList = new ArrayList<>();</code>
         while (i < nums1.size() && j < nums2.size()){
             if (nums1.get(i) <= nums2.get(j)){
                 resultList.add(nums1.get(i));
