@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+    background: scroll;
+    background: rgb(5, 15, 15);
+
+}
+
+.container {
+    text-align: center;
+    font-size: medium;
+    font-family: 'Chakra Petch', sans-serif;
+    color: whitesmoke;
+}
+
+a {
+    color: beige;
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+    color: beige;
+    border-bottom-style: none;
+    outline: 0;
+    text-decoration: none;
+}
+
+.post-date {
+    margin-top: 2em;
+    color: #888;
+}
+
+.post-date2 {
+    text-align: left;
+    margin-top: 2em;
+    color: #888;
+}
+
+.button {
+    background-color: slategrey;
+    color: white;
+    border-radius: 8px;
+    margin: 4px 2px;
+    padding: 10px
+}
+
+h2 {
+    color: beige;
+    font-size: xx-large;
+}
+
+.container p {
+    text-align: justify;
+    font-size: large;
+}
+
+h1 {
+    color: rgba(228, 175, 175, 0.61);
+}
+
+pre {
+    text-align: left;
+    color: white;
+    font-size: medium;
+}
+
+.code {
+    display: block;
+    white-space: pre-wrap;
+    color: white;
+    font-size: large;
+    background-color: darkslategrey;
+    border-style: solid;
+    border-color: darkgrey;
+    font-family: monospace
+}
